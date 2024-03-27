@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO DO LIST</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="todo">
+      <div class="headings">
+        <h2>To-Do List</h2>
+        <select id="filterations">
+          <option value= "Completed" >Completed</option>
+          <option value= "High Priority" >High</option>
+          <option value= "Medium Priority" >Medium</option>
+          <option value= "Low Priority" >Low</option>
+          <option value= "All" selected>Show All</option>
+        </select>
+      </div>
+      <div class="inputs">
+        <input type="text" placeholder="Add your task" id="inputBox" />
+        <button type="button" id="addBtn" onclick="addWork()">Add</button>
+      </div>
+      <ul id="container"></ul>
+    </div>
+    <div class="update">
+      <input type="text" placeholder="Enter updated task" id="updatebox" />
+      <button id="updateButton">Update</button>
+      <button id="cancelButton">Cancel</button>
+    </div>
+    <div class="priorities">
+      <button id="high">Urgent</button>
+      <button id="medium">Later</button>
+      <button id="low">Meh</button>
+      <button id="remove">Remove</button>
+    </div>
+
+    <script src="script.js" async defer></script>
+  </body>
+</html>

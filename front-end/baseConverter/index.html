@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="wrapper">
+            <p>BASE CONVERTER</p>
+            <div class="inputs">
+                <input type="text" id="inputValue" placeholder="Enter the value">
+            </div>
+            <div class="bases">
+                <select id="selection1">
+                    <option selected="selected" value="10" >DECIMAL</option>
+                    <option value="2">BINARY</option>
+                    <option value="8">OCTAL</option>
+                    <option value="16">HEXADECIMAL</option>
+
+                </select>
+                <select id="selection2">
+                    <option selected="selected" value="2" selected>BINARY</option>
+                    <option value="10">DECIMAL</option>
+                    <option value="8">OCTAL</option>
+                    <option value="16">HEXADECIMAL</option>
+
+                </select>
+            </div>
+            <div class="buttons">
+                <input type="button" id="submit" value="CALCULATE" onclick="baseConvert()">
+                <input type="button" id="reset" value="RESET" onclick="reset()">
+            </div>
+            <div id="output"></div>
+        </div>
+    </section>
+    
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,218 @@
+*{
+    margin:0;
+    padding:0;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Abel', sans-serif;
+}
+
+header {
+    color: rgba(255, 255, 255, 70%);
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.wallpapermaiden.com%2Fwallpaper%2F40772%2Fdownload%2F2560x1440%2Fcastle-of-aarburg-switzerland-church-night-reflection-river-stars-bridge-nature.jpeg&f=1&nofb=1&ipt=c3af47541b63a3f102c13a51e34a2e9c8386ca34f67c05ce2f8557238d874dd8&ipo=images");
+    background-size: cover;
+}
+.header-nav{
+    display:flex;
+}
+.right{
+    display:flex;
+}
+.top-margin{
+    color:white;
+    list-style:none;
+    text-decoration:none;
+    margin:22px;
+}
+a{
+    color:white;
+    text-decoration:none;
+    /* padding:20px;*/
+    font-size:1.5rem; 
+}
+.wrapper{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    width:100vw;
+    /* align-items: center; */
+}
+li{
+    transition:0.5s;
+    /* padding-bottom:0; */
+
+}
+li:hover{
+    transform:scale(1.2);
+    /* border-bottom:2px solid white; */
+}
+.anchor {
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: color 0.3s;
+    background-color: transparent;
+    transition:0.8s;
+}
+.top-img img{
+    width:120px;
+}
+.top-img{
+    margin:12px;
+    margin-left:20px;
+    list-style:none;
+}
+.right{
+    margin-left:auto;
+}
+.wrapper-content{
+    display:flex;
+    flex-direction:column;
+    flex-grow: 1;
+    align-items:center;
+    justify-content:center;
+    /* position:relative; */
+}
+.header-content{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    /* position:absolute; */
+    /* top:300px; */
+}
+h3{
+    font-size:90px;
+    padding-bottom:10px;
+    text-align:center;
+}
+h1{
+    font-size:50px;
+    padding-bottom:10px;
+}
+.navah{
+    margin-top:10px;
+    background-color:transparent;
+}
+.anchor:hover {
+    background-color: white;
+    color: black;
+}  
+.navah:hover {
+    background-color: white;
+    color: black;
+
+}
+.bodycontent{
+    display:flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: space-evenly;
+    background-color:lightslategrey;
+}
+.content-image{
+    width:35%;
+}
+.content-image2{
+    width:35%;
+}
+.center{
+    text-align:center;
+    font-size:28px;
+    padding:15px;
+}
+.text {
+    padding: 50px;
+    background-size: cover;
+    background-image: url('https://www.tripsavvy.com/thmb/iAe8r00RsXjp9_Wm8wLUon98K5I=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Bern6-0c1f764569c84b899a7d65b5d4fc0b6c.jpg');
+    text-align: center;
+}
+.text * {
+    padding:10px;
+}
+.first{
+    width: 600px;
+    border:1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-direction:column;
+
+}
+.first p, .second p{
+    padding:1em;
+}
+.bodyimg{
+    display: flex;
+    justify-content:space-evenly;
+    margin:50px;
+    align-items: center;
+    margin-top:0;
+}
+.second{
+    width:600px;
+    /* height:100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border:1px solid white;
+}
+.content-a-button {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: color 0.4s ease;
+    width:fit-content;
+    border:1px solid black;
+}
+.content-a-button:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+footer{
+    text-align:center;
+    color:white;
+    background-color:black;
+}
+footer p {
+    padding: 20px 20px 20px 14px;
+    font-size:20px;
+}
+footer a{
+    padding:0 20px;
+    font-size:16px; 
+}
+footer ul{
+    display:flex;
+    list-style:none;
+    align-items:center;
+    justify-content:center;
+    padding-bottom:30px;
+}
+.first h1, .second h1{
+    text-align:center;
+}
+.first p, .second p {
+    font-size:21px;
+}
+@media screen and (min-width:400px){
+    .wrapper{
+        width:100%;
+        display:flex;
+    }
+    .drop{
+        display:flex;
+        font-size:30px;
+        justify-content:flex-end;
+        align-items:center;
+    }
+}
